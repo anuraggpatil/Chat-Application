@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:orientation="vertical"
+    android:background="@color/primary_purple">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/checkicon"
+            app:tint="@color/white"/>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/settingProfile"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/displaypicture"
+        android:layout_marginTop="@dimen/_65sdp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/changeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elon Musk"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="@drawable/setting_shape"
+        android:backgroundTint="#92929292"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/changeStatus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:text="Hey there I'm using Chat App"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:background="@drawable/setting_shape"
+        android:backgroundTint="#92929292"
+
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+
+</LinearLayout>
